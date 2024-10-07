@@ -1,0 +1,61 @@
+
+code.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .memory:
+
+00000000 <jumb-0x68>:
+   0:	00002283          	lw	t0,0(zero) # 0 <OFFSET-0x20>
+   4:	00402303          	lw	t1,4(zero) # 4 <OFFSET-0x1c>
+   8:	00802383          	lw	t2,8(zero) # 8 <OFFSET-0x18>
+   c:	00530e33          	add	t3,t1,t0
+  10:	40530eb3          	sub	t4,t1,t0
+  14:	00537f33          	and	t5,t1,t0
+  18:	00534fb3          	xor	t6,t1,t0
+  1c:	00536433          	or	s0,t1,t0
+  20:	007314b3          	sll	s1,t1,t2
+  24:	00532933          	slt	s2,t1,t0
+  28:	005339b3          	sltu	s3,t1,t0
+  2c:	40735a33          	sra	s4,t1,t2
+  30:	00535ab3          	srl	s5,t1,t0
+  34:	00402303          	lw	t1,4(zero) # 4 <OFFSET-0x1c>
+  38:	00a30e13          	addi	t3,t1,10
+  3c:	00a37f13          	andi	t5,t1,10
+  40:	00a34f93          	xori	t6,t1,10
+  44:	00a36413          	ori	s0,t1,10
+  48:	00231493          	slli	s1,t1,0x2
+  4c:	00a32913          	slti	s2,t1,10
+  50:	00a33993          	sltiu	s3,t1,10
+  54:	40235a13          	srai	s4,t1,0x2
+  58:	00a35a93          	srli	s5,t1,0xa
+  5c:	00002303          	lw	t1,0(zero) # 0 <OFFSET-0x20>
+  60:	00402383          	lw	t2,4(zero) # 4 <OFFSET-0x1c>
+  64:	00802e03          	lw	t3,8(zero) # 8 <OFFSET-0x18>
+
+00000068 <jumb>:
+  68:	02710397          	auipc	t2,0x2710
+  6c:	02710e37          	lui	t3,0x2710
+  70:	00000e93          	li	t4,0
+  74:	024e82e7          	jalr	t0,36(t4)
+  78:	00130313          	addi	t1,t1,1
+  7c:	01c02623          	sw	t3,12(zero) # c <OFFSET-0x14>
+  80:	00002303          	lw	t1,0(zero) # 0 <OFFSET-0x20>
+  84:	00402383          	lw	t2,4(zero) # 4 <OFFSET-0x1c>
+  88:	00802e03          	lw	t3,8(zero) # 8 <OFFSET-0x18>
+  8c:	00602623          	sw	t1,12(zero) # c <OFFSET-0x14>
+  90:	00701823          	sh	t2,16(zero) # 10 <OFFSET-0x10>
+  94:	01c00923          	sb	t3,18(zero) # 12 <OFFSET-0xe>
+  98:	1941                	.insn	2, 0x1941
+  9a:	0000                	.insn	2, 0x
+  9c:	7200                	.insn	2, 0x7200
+  9e:	7369                	.insn	2, 0x7369
+  a0:	01007663          	bgeu	zero,a6,ac <jumb+0x44>
+  a4:	0000000f          	fence	unknown,unknown
+  a8:	7205                	.insn	2, 0x7205
+  aa:	3376                	.insn	2, 0x3376
+  ac:	6932                	.insn	2, 0x6932
+  ae:	7032                	.insn	2, 0x7032
+  b0:	0031                	.insn	2, 0x0031
+
+000000b2 <end>:
+	...
