@@ -4,7 +4,7 @@
 All Testing Source Codes in `Src` folder and the verification's pictures.
 
 # How to Run
-  1. Clone the Repo.
+  1. Clone the Repo
            
   2. Write any assembly code that you need the processor to excute it, write it in .text Section the `code.S` in `firmware`.
   3. Run first Commond in `gcc_commands.sh`, that assemble the source code to object code by `riscv32 compilar`
