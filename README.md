@@ -5,10 +5,7 @@ All Testing Source Codes in `Src` folder and the verification's pictures.
 
 # How to Run
   1. Clone the Repo
- ```bash
-  git clone https://github.com/username/risc-v-32-bit-processor.git
-  cd risc-v-32-bit-processor
-  ```                    
+           
   2. Write any assembly code that you need the processor to excute it, write it in .text Section the `code.S` in `firmware`.
   3. Run first Commond in `gcc_commands.sh`, that assemble the source code to object code by `riscv32 compilar`
  ```bash
@@ -53,10 +50,7 @@ gtkwave DataPath.vcd
 ** Note 2: Don't forget to link the `random_data.mem` location in the verilog code Data Memory, `output_64_lines_hex.txt` location in the verilog code Instruction Memory.                    
 ## Windows User
   1. Clone the Repo
- ```bash
-  git clone https://github.com/username/risc-v-32-bit-processor.git
-  cd risc-v-32-bit-processor
-  ``` 
+ 
 2. Use any external tool or source to covert the assembly risc code to hex codes.
 3. get the random data for data Memory.
  ```bash                    
